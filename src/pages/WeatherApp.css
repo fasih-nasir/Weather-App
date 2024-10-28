@@ -1,0 +1,124 @@
+body{
+  text-transform: capitalize;
+    margin: 0px !important;
+    padding: 0px !important;
+    font-family: "Raleway", serif !important;
+}
+.weather-app {
+  font-family: "Raleway", serif !important;
+
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+  }
+  .city-input{
+    padding:7px 15px;
+    font-family: "Raleway", serif !important;
+
+  }
+  
+  .city-select {
+    font-family: "Raleway", serif !important;
+
+    cursor: grabbing !important;
+    width: 100%;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
+    color: white !important;
+    background-color: rgba(219, 219, 219, 0.626) !important;
+    /* margin-bottom: 10px; */
+}
+
+/* Optional: Add styles for hover effect */
+.city-select:hover {
+    background-color: rgba(50, 50, 50, 0.7) !important; /* Darker shade on hover */
+}
+
+  .city-input {
+    font-family: "Raleway", serif !important;
+
+    cursor: grabbing !important;
+    width: 100%;
+border: none ;
+border-radius: 5px;
+font-weight: bold;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
+    color: white !important;
+    background-color: rgba(165, 165, 165, 0.626) !important;
+    /* margin-bottom: 10px; */
+  }
+  
+  .weather-card {
+    font-family: "Raleway", serif !important;
+/* background-color: rgba(52, 52, 52, 0.144); */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  }
+  .br{
+    border-left: 2px solid lightgray;
+  }
+  .container-fluid {
+    margin: 0px;
+    padding: 0px;
+    /* background-color: #f0f8ff; */
+  }
+  @media (max-width:992px) {
+    #bgim{
+      border-radius: 0px !important;
+      height: 60vh !important; 
+    }
+  }
+  @media (max-width:660px) {
+    #bgim{
+      border-radius: 0px !important;
+      height: 50vh !important; 
+    }
+  }
+  #bgim{
+    background-image: url("../assets/pic.webp");
+    background-size: cover;
+    object-fit: cover;
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+  }
+
+  .weather-inputs{
+    font-family: "Raleway", serif !important;
+
+    padding: 15px;
+    border-radius: 20px;
+    /* border: 2px solid red; */
+    background-color: rgba(255, 255, 255, 0.265);
+  }
+  
+  .tg{
+    font-weight: 500;
+    color: rgba(254, 254, 254, 0.898);
+  }
+  
+  .num{
+    font-family: "Play", sans-serif !important;
+  }
+  .loc{
+    position: absolute;
+    top: 0px;
+    /* height: 50px; */
+    right: 35px;
+    top: 15px;
+z-index: 0;
+
+    background-color: rgba(255, 255, 255, 0.239);
+border-radius: 5px;
+  }
+  .fa-location-dot{
+    font-size: 24px;
+  }

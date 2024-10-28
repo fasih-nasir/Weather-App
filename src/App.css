@@ -1,0 +1,15 @@
+.card{
+  padding: 20px 10px;
+  border: 2px solid lightgray;
+  background-color: coral;
+  /* height: 100px; */
+  /* width: 100px; */
+  display: inline-block;
+  margin: 0px 10px;
+}
+body{
+  font-family: "Raleway", serif !important;
+
+  margin: 0px !important;
+  padding: 0px !important;
+}
