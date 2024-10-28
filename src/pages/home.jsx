@@ -77,7 +77,7 @@ function WeatherApp() {
   return (
     <div className="container-fluid d-flex flex-column flex-lg-row  m-0 p-0 justify-content-center align-items-center" >
      <div className='col-lg-7 col-12  position-relative ' id='bgim'>
-      <div className=' justify-content-center col-7 col-lg-4 loc text-white d-flex  justify-content-lg-around align-items-center '>
+      <div className=' justify-content-center col-7  col-lg-4 loc text-white d-flex  justify-content-lg-around align-items-center '>
      
 <i className='fa-solid fa-location-dot col-2 px-3 ms-2'> </i>
 <div className='col-11 px-lg-1 px-2 col-lg-9'>
@@ -86,9 +86,9 @@ function WeatherApp() {
 </div>
       </div>
       {/* <Title level={2}>The only forecast you need</Title> */}
-      <h2 className='py-3 tg col-lg-11 col-10 text-center'>the only weather forecast you need</h2>
+      <h2 className='py-3 tg col-lg-11 col-10 text-center d-none d-lg-block'>the only weather forecast you need</h2>
 {/* <hr className='hr mb-4 col-4'/> */}
-      <Space direction="vertical" size="large" className="weather-inputs col-lg-6 col-10  py-lg-3 py-5">
+      <Space direction="vertical" size="large" className="weather-inputs col-lg-6 col-11  py-lg-3 py-5">
         {/* Select City from Famous Capital Cities */}
        
         <Select
@@ -116,8 +116,9 @@ function WeatherApp() {
       </Space>
       
       
+     
       </div>
-      <div className='col-lg-5 col-11 px-3 mt-2'>
+      <div className='col-lg-5 col-12 px-3 mt-2'>
         {/* <h2 className='fw-bolder'>Today</h2> */}
       {/* Loader */}
       {loading && <Spin size="large"  />}
@@ -125,8 +126,8 @@ function WeatherApp() {
       {/* Weather Details */}
       {error && <p type="danger">{error}</p>}
       {weather && weather.main && (
-        <Card className="weather-card" style={{ fontFamily:"Raleway"}}>
-     <div className='d-flex flex-row'>
+        <Card className="weather-card col-12" style={{ fontFamily:"Raleway"}}>
+     <div className='d-flex col-12 flex-row'>
       <div className='col-6'>
       <h1 level={1} className='display-5 fw-bolder num'>{weather.main.temp}°<span style={{fontSize:"22px"}}>C</span> </h1>
       <h3 className='fw-light'>
